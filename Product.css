@@ -1,0 +1,30 @@
+/* Basic Styiling */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15;
+    display: flex;
+}
+
+/* Columns styiling*/
+.left-column {
+    width: 65%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: 60px;
+}
+
+/* Left Column*/
+.left-column img {
+    
+}
