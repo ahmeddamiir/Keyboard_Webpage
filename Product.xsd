@@ -1,56 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="keyboards" type="keyboardsType"/>
+  <xs:complexType name="connectingType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="shape" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="interfaceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="portType" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
   <xs:complexType name="connectionType">
     <xs:sequence>
-      <xs:element type="xs:string" name="connecting"/>
-      <xs:element type="xs:string" name="interface"/>
+      <xs:element type="connectingType" name="connecting"/>
+      <xs:element type="interfaceType" name="interface"/>
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="typeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="switch" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="formatType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="layout" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="keyboard_destinationType">
     <xs:sequence>
-      <xs:element type="xs:string" name="type"/>
-      <xs:element type="xs:string" name="format"/>
-      <xs:element type="xs:string" name="technology"/>
+      <xs:element type="typeType" name="type"/>
+      <xs:element type="formatType" name="format"/>
+      <xs:element name="technology">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Mechanic"/>
+            <xs:enumeration value="Opto-Mechanic"/>
+            <xs:enumeration value="Razer Opto-Mechanic"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localisationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="lang" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="key_typeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="profileType" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="enterType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="size" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="cursor_arrowsType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="logoAbove" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="layoutType">
     <xs:sequence>
-      <xs:element type="xs:string" name="localisation"/>
-      <xs:element type="xs:string" name="key_type"/>
-      <xs:element type="xs:string" name="enter"/>
-      <xs:element type="xs:string" name="backspace"/>
-      <xs:element type="xs:string" name="cursor_arrows"/>
+      <xs:element type="localisationType" name="localisation"/>
+      <xs:element type="key_typeType" name="key_type"/>
+      <xs:element type="enterType" name="enter"/>
+      <xs:element name="backspace">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Wide"/>
+            <xs:enumeration value="Narrow"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="cursor_arrowsType" name="cursor_arrows"/>
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="featuresType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="RGBSupport" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="keyboard_featuresType">
     <xs:sequence>
-      <xs:element type="xs:string" name="features"/>
+      <xs:element type="featuresType" name="features"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="tintType">
     <xs:sequence>
-      <xs:element type="xs:string" name="colour"/>
+      <xs:element name="colour">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="black"/>
+            <xs:enumeration value="Pink"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="widthType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="size"/>
+        <xs:attribute type="xs:string" name="length" use="optional"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="heightType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="size"/>
+        <xs:attribute type="xs:string" name="length" use="optional"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="depthType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="size"/>
+        <xs:attribute type="xs:string" name="length" use="optional"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -64,7 +149,7 @@
   <xs:complexType name="weighingType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="kilo"/>
+        <xs:attribute type="xs:string" name="kilo" use="optional"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -86,14 +171,34 @@
   </xs:complexType>
   <xs:complexType name="companyType">
     <xs:sequence>
-      <xs:element type="xs:string" name="make"/>
-      <xs:element type="xs:string" name="model"/>
+      <xs:element name="make">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Logitech"/>
+            <xs:enumeration value="Dell"/>
+            <xs:enumeration value="Corsair"/>
+            <xs:enumeration value="Razer"/>
+            <xs:enumeration value="Cherry"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="model">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="G512"/>
+            <xs:enumeration value="AW510K"/>
+            <xs:enumeration value="K100"/>
+            <xs:enumeration value="HuntsmanV2"/>
+            <xs:enumeration value="MXBoard8.0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
       <xs:element type="detailType" name="detail"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="keyboardsType">
     <xs:sequence>
-      <xs:element type="companyType" name="company" maxOccurs="unbounded" minOccurs="5"/>
+      <xs:element type="companyType" name="company" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

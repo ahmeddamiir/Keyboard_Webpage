@@ -1,38 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keyboards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Product.xsd">
+<keyboards>
     <company>
         <make>Logitech</make>
         <model>G512</model>
         <detail>
             <connection>
-                <connecting>Wired</connecting>
-                <interface>USB</interface>
+                <connecting shape="standard">Wired</connecting>
+                <interface portType="A">USB</interface>
             </connection>
             <keyboard_destination>
-                <type>Gaming</type>
-                <format>Standard</format>
+                <type switch="MX_Red">Gaming</type>
+                <format layout="QWERTY">Standard</format>
                 <technology>Mechanic</technology>
             </keyboard_destination>
             <layout>
-                <localisation>American</localisation>
-                <key_type>Classic</key_type>
-                <enter>One Slotted</enter>
+                <localisation lang="en">American</localisation>
+                <key_type profileType="high">Classic</key_type>
+                <enter size="rectangular">One Slotted</enter>
                 <backspace>Wide</backspace>
-                <cursor_arrows>Narrow</cursor_arrows>
+                <cursor_arrows logoAbove="No">Narrow</cursor_arrows>
             </layout>
             <keyboard_features>
-                <features>Backlit keys, USB Hub, Dynamic back-lighting</features>
+                <features RGBSupport="yes">Backlit keys, USB Hub, Dynamic back-lighting</features>
             </keyboard_features>
             <tint>
                 <colour>black</colour>
             </tint>
             <dimensions>
-                <width size="cm">44.5</width>
-                <height size="cm">3.55</height>
-                <depth size="cm">13.2</depth>
+                <width length="cm">44.5</width>
+                <height length="cm">3.55</height>
+                <depth length="cm">13.2</depth>
             </dimensions>
             <weight>
                 <weighing kilo="kg">1.13</weighing>
+            </weight>
+        </detail>
+    </company>
+    <company>
+        <make>Dell</make>
+        <model>AW510K</model>
+        <detail>
+            <connection>
+                <connecting shape="standard">Wired</connecting>
+                <interface portType="A">USB</interface>
+            </connection>
+            <keyboard_destination>
+                <type switch="MX_Brown">Gaming</type>
+                <format layout="QWERTY">Standard</format>
+                <technology>Mechanic</technology>
+            </keyboard_destination>
+            <layout>
+                <localisation lang="en">American</localisation>
+                <key_type profileType="low">Classic</key_type>
+                <enter size="rectangular">One Slotted</enter>
+                <backspace>Wide</backspace>
+                <cursor_arrows logoAbove="No">Wide</cursor_arrows>
+            </layout>
+            <keyboard_features>
+                <features RGBSupport="yes">Backlit keys, Multimedia keys, Mechanical keys</features>
+            </keyboard_features>
+            <tint>
+                <colour>black</colour>
+            </tint>
+            <dimensions>
+                <width length="cm">46.7</width>
+                <height length="cm">2.94</height>
+                <depth length="cm">15.62</depth>
+            </dimensions>
+            <weight>
+                <weighing kilo="kg">0.91</weighing>
+            </weight>
+        </detail>
+    </company>
+    <company>
+        <make>Corsair</make>
+        <model>K100</model>
+        <detail>
+            <connection>
+                <connecting shape="thick">Wired</connecting>
+                <interface portType="A">USB</interface>
+            </connection>
+            <keyboard_destination>
+                <type switch="MX_Red">Gaming</type>
+                <format layout="QWERTY">Standard</format>
+                <technology>Opto-Mechanic</technology>
+            </keyboard_destination>
+            <layout>
+                <localisation lang="en">American</localisation>
+                <key_type profileType="high">Classic</key_type>
+                <enter size="rectangular">One Slotted</enter>
+                <backspace>Narrow</backspace>
+                <cursor_arrows logoAbove="No">Wide</cursor_arrows>
+            </layout>
+            <keyboard_features>
+                <features RGBSupport="yes">Backlit keys, Mechanical keys</features>
+            </keyboard_features>
+            <tint>
+                <colour>black</colour>
+            </tint>
+            <dimensions>
+                <width length="cm">47</width>
+                <height length="cm">3.8</height>
+                <depth length="cm">16.6</depth>
+            </dimensions>
+            <weight>
+                <weighing kilo="kg">1.31</weighing>
+            </weight>
+        </detail>
+    </company>
+    <company>
+        <make>Razer</make>
+        <model>HuntsmanV2</model>
+        <detail>
+            <connection>
+                <connecting shape="standard">Wired</connecting>
+                <interface portType="A">USB</interface>
+            </connection>
+            <keyboard_destination>
+                <type switch="MX_Blue">Office</type>
+                <format layout="QWERTY">Standard</format>
+                <technology>Razer Opto-Mechanic</technology>
+            </keyboard_destination>
+            <layout>
+                <localisation lang="en">International</localisation>
+                <key_type profileType="high">Classic</key_type>
+                <enter size="rectangular">One Slotted</enter>
+                <backspace>Wide</backspace>
+                <cursor_arrows logoAbove="No">Wide</cursor_arrows>
+            </layout>
+            <keyboard_features>
+                <features RGBSupport="yes">Dynamic back-lighting</features>
+            </keyboard_features>
+            <tint>
+                <colour>black</colour>
+            </tint>
+            <dimensions>
+                <width length="cm">44.8</width>
+                <height length="cm">3.9</height>
+                <depth length="cm">14</depth>
+            </dimensions>
+            <weight>
+                <weighing kilo="kg">1.2</weighing>
+            </weight>
+        </detail>
+    </company>
+    <company>
+        <make>Cherry</make>
+        <model>MXBoard8.0</model>
+        <detail>
+            <connection>
+                <connecting shape="standard">Wired</connecting>
+                <interface portType="A">USB</interface>
+            </connection>
+            <keyboard_destination>
+                <type switch="MX_Red">Gaming</type>
+                <format layout="QWERTY">Without Numeric Part</format>
+                <technology>Mechanic</technology>
+            </keyboard_destination>
+            <layout>
+                <localisation lang="en">American</localisation>
+                <key_type profileType="high">Classic</key_type>
+                <enter size="rectangular">One Slotted</enter>
+                <backspace>Wide</backspace>
+                <cursor_arrows logoAbove="No">Narrow</cursor_arrows>
+            </layout>
+            <keyboard_features>
+                <features RGBSupport="yes">Backlit keys, Mechanical keys</features>
+            </keyboard_features>
+            <tint>
+                <colour>Pink</colour>
+            </tint>
+            <dimensions>
+                <width length="cm">35.1</width>
+                <height length="cm">4.4</height>
+                <depth length="cm">14.5</depth>
+            </dimensions>
+            <weight>
+                <weighing kilo="kg">0.91</weighing>
             </weight>
         </detail>
     </company>
