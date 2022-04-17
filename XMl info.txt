@@ -1,0 +1,27 @@
+COMPANY: concatenating all keyboards
+1. Each company contains MAKE, MODEL and DETAIL
+2. Each DETAIL contains:
+    . CONNECTION
+        . CONNECTING (wired)
+        . INTERFACE (usb)
+    . KEYBOARD_DESIGNATION
+        . TYPE (gaming)
+        . FORMAT (standard)
+        . TECHNOLOGY (mechanic)
+    . LAYOUT
+        . LOCALISATION (american)
+        . KEY_TYPE (classic)
+        . ENTER (one_slotted)
+        . BACKSPACE (wide)
+        . LEFT_SHIFT (wide)
+        . CURSOR_ARROWS (narrow)
+    . KEYBOARD_FEATURES
+        . FEATURES (Backlit keys, USB Hub, Dynamic back-lighting)
+    . TINT
+        . COLOUR (black)
+    . DIMENSIONS
+        . WIDTH (44.5cm)
+        . HEIGHT (3.55cm)
+        . DEPTH (13.2cm)
+    . WEIGHT
+        . weighing (1.130g)

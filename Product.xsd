@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="keyboards" type="keyboardsType"/>
+  <xs:complexType name="connectionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="connecting"/>
+      <xs:element type="xs:string" name="interface"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="keyboard_destinationType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="type"/>
+      <xs:element type="xs:string" name="format"/>
+      <xs:element type="xs:string" name="technology"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="layoutType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="localisation"/>
+      <xs:element type="xs:string" name="key_type"/>
+      <xs:element type="xs:string" name="enter"/>
+      <xs:element type="xs:string" name="backspace"/>
+      <xs:element type="xs:string" name="cursor_arrows"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="keyboard_featuresType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="features"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tintType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="colour"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="widthType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="size"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="heightType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="size"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="depthType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="size"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="dimensionsType">
+    <xs:sequence>
+      <xs:element type="widthType" name="width"/>
+      <xs:element type="heightType" name="height"/>
+      <xs:element type="depthType" name="depth"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="weighingType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="kilo"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="weightType">
+    <xs:sequence>
+      <xs:element type="weighingType" name="weighing"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detailType">
+    <xs:sequence>
+      <xs:element type="connectionType" name="connection"/>
+      <xs:element type="keyboard_destinationType" name="keyboard_destination"/>
+      <xs:element type="layoutType" name="layout"/>
+      <xs:element type="keyboard_featuresType" name="keyboard_features"/>
+      <xs:element type="tintType" name="tint"/>
+      <xs:element type="dimensionsType" name="dimensions"/>
+      <xs:element type="weightType" name="weight"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="companyType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="make"/>
+      <xs:element type="xs:string" name="model"/>
+      <xs:element type="detailType" name="detail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="keyboardsType">
+    <xs:sequence>
+      <xs:element type="companyType" name="company" maxOccurs="unbounded" minOccurs="5"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

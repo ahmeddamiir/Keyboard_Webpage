@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboards xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Product.xsd">
+    <company>
+        <make>Logitech</make>
+        <model>G512</model>
+        <detail>
+            <connection>
+                <connecting>Wired</connecting>
+                <interface>USB</interface>
+            </connection>
+            <keyboard_destination>
+                <type>Gaming</type>
+                <format>Standard</format>
+                <technology>Mechanic</technology>
+            </keyboard_destination>
+            <layout>
+                <localisation>American</localisation>
+                <key_type>Classic</key_type>
+                <enter>One Slotted</enter>
+                <backspace>Wide</backspace>
+                <cursor_arrows>Narrow</cursor_arrows>
+            </layout>
+            <keyboard_features>
+                <features>Backlit keys, USB Hub, Dynamic back-lighting</features>
+            </keyboard_features>
+            <tint>
+                <colour>black</colour>
+            </tint>
+            <dimensions>
+                <width size="cm">44.5</width>
+                <height size="cm">3.55</height>
+                <depth size="cm">13.2</depth>
+            </dimensions>
+            <weight>
+                <weighing kilo="kg">1.13</weighing>
+            </weight>
+        </detail>
+    </company>
+</keyboards>
