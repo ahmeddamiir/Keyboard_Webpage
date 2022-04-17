@@ -34,6 +34,17 @@
             <weight>
                 <weighing kilo="kg">1.13</weighing>
             </weight>
+            <prices>
+                <price type="normal">
+                    <value>2104</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">25</discount>
+                    <discounted_value>1578</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
         </detail>
     </company>
     <company>
@@ -70,6 +81,17 @@
             <weight>
                 <weighing kilo="kg">0.91</weighing>
             </weight>
+            <prices>
+                <price type="normal">
+                    <value>3579</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">20</discount>
+                    <discounted_value>2863.2</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
         </detail>
     </company>
     <company>
@@ -106,6 +128,17 @@
             <weight>
                 <weighing kilo="kg">1.31</weighing>
             </weight>
+            <prices>
+                <price type="normal">
+                    <value>5227</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">20</discount>
+                    <discounted_value>3136.2</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
         </detail>
     </company>
     <company>
@@ -142,6 +175,17 @@
             <weight>
                 <weighing kilo="kg">1.2</weighing>
             </weight>
+            <prices>
+                <price type="normal">
+                    <value>5000</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">20</discount>
+                    <discounted_value>4250</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
         </detail>
     </company>
     <company>
@@ -178,6 +222,17 @@
             <weight>
                 <weighing kilo="kg">0.91</weighing>
             </weight>
+            <prices>
+                <price type="normal">
+                    <value>4000</value>
+                    <currency>CZK</currency>
+                </price>
+                <price type="discounted">
+                    <discount percent="%">10</discount>
+                    <discounted_value>3600</discounted_value>
+                    <currency>CZK</currency>
+                </price>
+            </prices>
         </detail>
     </company>
 </keyboards>

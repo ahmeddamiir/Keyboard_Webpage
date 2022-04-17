@@ -1,0 +1,88 @@
+
+        {
+        "Company":[
+        
+            {
+                "brand": "Cherry",
+                "model": "MXBoard8.0"
+            } ,
+            {
+                "brand": "Corsair",
+                "model": "K100"
+            } ,
+            {
+                "brand": "Dell",
+                "model": "AW510K"
+            } ,
+            {
+                "brand": "Logitech",
+                "model": "G512"
+            } ,
+            {
+                "brand": "Razer",
+                "model": "HuntsmanV2"
+            } 
+        ],
+        "Prices":[
+        
+                {
+                    "Normal Price": "2104CZK"
+                } ,
+                {
+                    "Discounter Price": "1578CZK",
+                    "Discount": "25%"
+                } ,
+                {
+                    "Normal Price": "3579CZK"
+                } ,
+                {
+                    "Discounter Price": "2863.2CZK",
+                    "Discount": "20%"
+                } ,
+                {
+                    "Normal Price": "5227CZK"
+                } ,
+                {
+                    "Discounter Price": "3136.2CZK",
+                    "Discount": "20%"
+                } ,
+                {
+                    "Normal Price": "5000CZK"
+                } ,
+                {
+                    "Discounter Price": "4250CZK",
+                    "Discount": "20%"
+                } ,
+                {
+                    "Normal Price": "4000CZK"
+                } ,
+                {
+                    "Discounter Price": "3600CZK",
+                    "Discount": "10%"
+                } 
+        ],
+        "Discount Type": [
+        
+                        {
+                            "Normal Discount": "10",
+                            "Discount Value": "3600"
+                        } ,
+                        {
+                            "Student Discount": "20",
+                            "Discounted Value": "2863.2"
+                        } ,
+                        {
+                            "Student Discount": "20",
+                            "Discounted Value": "3136.2"
+                        } ,
+                        {
+                            "Student Discount": "20",
+                            "Discounted Value": "4250"
+                        } ,
+                        {
+                            "Student Discount": "25",
+                            "Discounted Value": "1578"
+                        } 
+        ]
+        }
+    
