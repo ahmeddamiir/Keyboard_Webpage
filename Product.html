@@ -12,6 +12,33 @@
       <script src="Product.js"></script>
     </head>
     <body>
+      <header>Logitech Keyboards</header>
+
+      <!--Product image-->          
+      <aside>
+        <div class="product-image">
+          <span>Image</span>
+
+          <div class="album">
+              <div>
+                  <input data-image="box" type="radio" id="box" name="image" value="box" checked>
+                  <label for="box"><span></span></label>
+              </div>
+              <div>
+                  <input data-image="front" type="radio" id="front" name="image" value="front">
+                  <label for="front"><span></span></label>
+              </div>
+              <div>
+                  <input data-image="side" type="radio" id="side" name="image" value="side">
+                  <label for="side"><span></span></label>
+              </div>
+              <div>
+                  <input data-image="zoomed" type="radio" id="zoomed" name="image" value="zoomed">
+                  <label for="zoomed"><span></span></label>
+              </div>
+          </div>
+      </div>
+      </aside>
         <!--Container for two columns (one for product image and the other for product's description and customization)-->
         <main class="product_container">
             
@@ -41,31 +68,6 @@
                     </p>
                 </div>
 
-                <!--Keyboard configuration-->
-                <!--Product image-->
-                <div class="product-image">
-                    <span>Image</span>
-
-                    <div class="album">
-                        <div>
-                            <input data-image="box" type="radio" id="box" name="image" value="box" checked>
-                            <label for="box"><span></span></label>
-                        </div>
-                        <div>
-                            <input data-image="front" type="radio" id="front" name="image" value="front">
-                            <label for="front"><span></span></label>
-                        </div>
-                        <div>
-                            <input data-image="side" type="radio" id="side" name="image" value="side">
-                            <label for="side"><span></span></label>
-                        </div>
-                        <div>
-                            <input data-image="zoomed" type="radio" id="zoomed" name="image" value="zoomed">
-                            <label for="zoomed"><span></span></label>
-                        </div>
-                    </div>
-                </div>
-
                 <!--Switches configuration-->
                 <div class="switch-config">
                     <span>Switch configuration</span>
@@ -89,10 +91,19 @@
         <footer class="footer">
             <div class="footer-address">
                 <h1 class="footer-logo">ClickySwitches</h1>
+                <article>
+                  <span class="clicky-switches">Clickyswitches</span> is the world leader in computer peripherals and accessories.
+                  After nearly 30 years of invention and innovation, we maintain our market leadership by turning computer 
+                  peripherals into devices that enable new ways of working. Our number one priority has always been comfort
+                  and reliability, yet our products also drive business mobility and productivity.
+                  Let us visit you to discuss your unique business requirements and to show you how our solutions can provide
+                  an almost instant return on investment
+                </article>
                 <h2>Contact</h2>
                 <address>
                     4225 Southpark Avenue. S. North Carolina<br>
                     <a class="footer-email" href="mailto:support@clickyswitches.com">Email Us</a>
+                    <section name="navigation-lists">
                     <ul class="footer-navigation">
                         <li class="navigation-item">
                           <h2 class="navigation-title">Media</h2>
@@ -124,15 +135,15 @@
                               <a href="#">Frame Design</a>
                             </li>
                             <li>
-                                <a href="#">Automation</a>
+                                <a href="#">Gaming</a>
                               </li>
                               
                               <li>
-                                <a href="#">Artificial Intelligence</a>
+                                <a href="#">Art</a>
                               </li>
                               
                               <li>
-                                <a href="#">IoT</a>
+                                <a href="#">Writing</a>
                               </li>
                           </ul>
                         </li>
@@ -155,7 +166,9 @@
                           </ul>
                         </li>
                       </ul>
-                      <div class="legal">
+
+                    </section>
+                     <div class="legal">
                           <p>&copy; 2012 priccode. All rights reserved.</p>
                           <div class="legal-links">
                               <span>Made with <span class="heart">♥</span> Ahmed Hassan</span>

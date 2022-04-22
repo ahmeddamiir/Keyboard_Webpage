@@ -6,6 +6,14 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+  margin: 0;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 500%;  
+  color: #2f2f2f;
+}
 .product_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -233,6 +241,15 @@ html, body {
     background-color: #f4f4f4;
     align-items: start;
     min-height: 100vh;
+  }
+  
+  section {
+    background-color:blanchedalmond;
+  }
+
+  .clicky-switches {
+    font-size: larger;
+    font-weight: bold;
   }
   
   .footer {
