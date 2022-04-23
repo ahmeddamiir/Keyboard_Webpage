@@ -175,6 +175,16 @@ header {
     opacity: 0.5;
     margin-right: 5px;
 }
+h3 {
+  font-size: small;
+  color: steelblue;
+}
+#main-row #main-column {
+  font-weight: bold;
+}
+#comparison-keyboards {
+  font-weight: 500;
+}
 /* Product Price */
 .product-price {
     display: flex;
