@@ -21,7 +21,7 @@
             </xsl:if>
             <xsl:if test="position() mod 2 = 0">
                 {
-                    "Discounter Price": "<xsl:value-of select="discounted_value"/> <xsl:value-of select="currency"/>",
+                    "Discounted Price": "<xsl:value-of select="discounted_value"/> <xsl:value-of select="currency"/>",
                     "Discount": "<xsl:value-of select="discount"/>%"
                 } <xsl:if test="position() !=last()">,</xsl:if>
             </xsl:if>
